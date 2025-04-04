@@ -1,2 +1,14 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    fullName VARCHAR(100),
+    age INT
+);
+
+INSERT INTO student (id, fullName, age) VALUES
+(1, 'Kevin Munene', 18),
+(2, 'John Kamau', 19),
+(3, 'Williams Nyaga', 20);
+
+UPDATE student
+SET age = 20
+WHERE id = 2;
